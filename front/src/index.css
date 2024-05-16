@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts css start */
+
+@font-face {
+  font-family: "SolaimanLipi";
+  font-style: normal;
+  font-weight: normal;
+  src: local("/fonts/SolaimanLipiNormal"),
+    url("/fonts/solaimanlipi.woff") format("woff");
+}
+
+:root {
+  --body: #f0f0f1;
+}
+
+body {
+  font-weight: medium;
+  background-color: var(--body);
+}
+
+.font-bangla {
+  font-family: SolaimanLipi;
+}
+
+.font-english {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* font css end */
+
+/* button start */
+.button-primary {
+  @apply bg-primaryColor text-white px-4 py-2 mt-2;
+}
+/* button end */
+
+/* dashboard navbar css start */
+.navbar-hover {
+  @apply px-5 py-1 hover:bg-lightBg cursor-pointer;
+}
+/* dashboard navbar css end */
+
+/* client sidebar start */
+.client-sidebar-links {
+  @apply w-full px-3 py-[7px] border-l-[4px] border-darkBg hover:border-[#7dd0ff] hover:text-[#7dd0ff] flex items-center gap-3 transition-all duration-150;
+}
+
+.active-link {
+  @apply bg-primaryColor border-primaryColor text-white hover:text-white w-full;
+}
+/* client sidebar end */
+
+/* form and input elements start */
+.form-design {
+  @apply flex flex-col;
+}
+
+.form-design label {
+  @apply mt-2 mb-1 font-bangla font-semibold;
+}
+
+.form-design input,
+.form-design textarea {
+  @apply w-full px-4 py-2 bg-white border-[1px] border-borderColor rounded-none outline-none resize-none;
+}
+
+.form-design button {
+  @apply bg-primaryColor text-white px-4 py-2 mt-2;
+}
+/* form and input elements end */
